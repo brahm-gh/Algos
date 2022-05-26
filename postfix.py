@@ -34,9 +34,6 @@ def post_fix(s):
     for i in range(len(s)):
         l.append(s[i])
 
-
-
-
     for i in range(len(l)):
         if l[i] in ['+', '-', '*', '/']:
             l2 = []
@@ -56,7 +53,7 @@ def post_fix(s):
     return float(stack.top())
 
 
-print(post_fix('52+83-*4/'))
+
 
 
 
