@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def find_brute(T, P):
     """Return the lowest index of T at which substring P begins( or else -1)."""
 
@@ -10,3 +12,16 @@ def find_brute(T, P):
             return i                          # substring T[i:i+m] matches P
     return -1                                 # failed to find a match starting with any i
 
+with open('Vibrio_cholerae.txt', 'r') as f:
+    T = f.read()
+
+with open('ori.txt', 'r') as f:
+    P = f.read()
+
+start = datetime.now()
+find_brute(T, P)
+end = datetime.now()
+duration = end - start
+print(f'It took {duration} to run the algorithm')
+
+print(find_brute(T, P))
