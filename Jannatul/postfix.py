@@ -32,12 +32,12 @@ class EvalPostfix:
         return int(self.pop())
 
 
-'''str_postfix_expression = '100 200 + 2 / 5 * 7 + '
+str_postfix_expression = '100 200 + 2 / 5 * 7 +'
 strconv = str_postfix_expression.split(' ')
 obj = EvalPostfix()
-print(f"{obj.calculate(strconv)}")'''
+print(f"{obj.calculate(strconv)}")
 
-str_postfix_expression = input("Input the postfix expression : ")
+'''str_postfix_expression = input("Input the postfix expression : ")
 strconv = str_postfix_expression.split(' ')
 obj = EvalPostfix()
-print(f"The result is {obj.calculate(strconv)}")
+print(f"The result is {obj.calculate(strconv)}")'''
